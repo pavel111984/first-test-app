@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   users = [
-  {name: 'WFM 1'},
-  {name: 'WFM 2'},
-  {name: 'WFM 3'},
-  {name: 'WFM 4'},
-  {name: 'WFM 5'},
-  {name: 'WFM 6'},
-  {name: 'WFM 7'},
-  {name: 'WFM 8'}
+  {name: 'Карточка 1'},
+  {name: 'Карточка 2'},
+  {name: 'Карточка 3'},
+  {name: 'Карточка 4'},
+  {name: 'Карточка 5'},
+  {name: 'Карточка 6'},
+  {name: 'Карточка 7'},
+  {name: 'Карточка 8'}
   
   ]
 }
