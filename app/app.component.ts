@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
+import { UsersService } from './users.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [UsersService]
 })
 export class AppComponent {
-  
-  users = [
-  {name: 'Карточка 1'},
-  {name: 'Карточка 2'},
-  {name: 'Карточка 3'},
-  {name: 'Карточка 4'},
-  {name: 'Карточка 5'},
-  {name: 'Карточка 6'},
-  {name: 'Карточка 7'},
-  {name: 'Карточка 8'}
-  
-  ]
+users = [];
+constructor (private usersService: UsersService){}
+
+ngOnInit() {
+this.usersService.getUsers().subscribe( users => {
+console.log(users)
+})
+}
+
 }
